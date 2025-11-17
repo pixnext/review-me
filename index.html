@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review-Me | Boost Your Clinic's Online Reputation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+        }
+        .review-card {
+            transition: all 0.3s ease;
+        }
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #4F46E5;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        .stats-item {
+            transition: all 0.3s ease;
+        }
+        .stats-item:hover {
+            transform: scale(1.05);
+        }
+        .pricing-card {
+            transition: all 0.3s ease;
+        }
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="flex items-center">
+                            <i class="fas fa-comment-medical text-indigo-600 text-3xl mr-2"></i>
+                            <span class="text-xl font-bold text-indigo-600">Review-Me</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#features" class="nav-link text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium">Features</a>
+                    <a href="#benefits" class="nav-link text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium">Benefits</a>
+                    <a href="#how-it-works" class="nav-link text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium">How It Works</a>
+                    <a href="#pricing" class="nav-link text-gray-700 hover:text-indigo-600 px-3 py-2 text-sm font-medium">Pricing</a>
+                    <a href="#demo" class="ml-8 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        Request Demo
+                    </a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="gradient-bg">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+                    Boost Your Clinic's Online Reputation
+                </h1>
+                <p class="mt-6 max-w-3xl mx-auto text-xl text-indigo-100">
+                    Personalized review requests featuring familiar faces increase review rates by up to 300%. Seamlessly integrated with your practice management system.
+                </p>
+                <div class="mt-10 flex justify-center space-x-4">
+                    <a href="https://arinwebdeveloper.github.io/review-me-vue/" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">
+                        Request Demo
+                    </a>
+                    <a href="#pricing" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        View Pricing
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="stats-item bg-white overflow-hidden shadow rounded-lg p-6">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
+                            <i class="fas fa-percentage text-white text-xl"></i>
+                        </div>
+                        <div class="ml-5 w-0 flex-1">
+                            <dt class="text-sm font-medium text-gray-500 truncate">
+                                Increase in Review Rates
+                            </dt>
+                            <dd class="flex items-baseline">
+                                <div class="text-2xl font-semibold text-gray-900">
+                                    300%
+                                </div>
+                            </dd>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats-item bg-white overflow-hidden shadow rounded-lg p-6">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
+                            <i class="fas fa-star text-white text-xl"></i>
+                        </div>
+                        <div class="ml-5 w-0 flex-1">
+                            <dt class="text-sm font-medium text-gray-500 truncate">
+                                Average Rating Improvement
+                            </dt>
+                            <dd class="flex items-baseline">
+                                <div class="text-2xl font-semibold text-gray-900">
+                                    1.2
+                                </div>
+                            </dd>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats-item bg-white overflow-hidden shadow rounded-lg p-6">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
+                            <i class="fas fa-user-plus text-white text-xl"></i>
+                        </div>
+                        <div class="ml-5 w-0 flex-1">
+                            <dt class="text-sm font-medium text-gray-500 truncate">
+                                New Patient Conversion
+                            </dt>
+                            <dd class="flex items-baseline">
+                                <div class="text-2xl font-semibold text-gray-900">
+                                    68%
+                                </div>
+                            </dd>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats-item bg-white overflow-hidden shadow rounded-lg p-6">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
+                            <i class="fas fa-dollar-sign text-white text-xl"></i>
+                        </div>
+                        <div class="ml-5 w-0 flex-1">
+                            <dt class="text-sm font-medium text-gray-500 truncate">
+                                Revenue Growth Potential
+                            </dt>
+                            <dd class="flex items-baseline">
+                                <div class="text-2xl font-semibold text-gray-900">
+                                    25%
+                                </div>
+                            </dd>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div id="features" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Features</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Everything you need to grow with reviews
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Our system is designed specifically for clinics to maximize review collection and quality.
+                </p>
+            </div>
+
+            <div class="mt-20">
+                <div class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Personalized Staff Recognition</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Feature the actual staff members who treated the patient in review requests, increasing recognition and response rates.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Practice Management Integration</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Seamless integration with all major practice management systems to automatically pull patient and staff data.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">SMS & Email Delivery</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Send review requests via both SMS and email with personalized messages and staff photos for maximum impact.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Performance Analytics</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Track review rates, response times, and rating improvements with detailed analytics dashboards.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <i class="fas fa-images"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Custom Branding</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Maintain your clinic's branding throughout the review process with custom colors, logos, and messaging.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">HIPAA Compliant</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Fully HIPAA compliant solution that protects patient data while maximizing review collection.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefits Section -->
+    <div id="benefits" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-12">
+                <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Benefits</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Why Reviews Matter for Your Clinic
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-search text-indigo-600"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold">First Impressions Count</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        94% of patients use online reviews to evaluate physicians and clinics. A 1-star increase in your average rating can lead to a 5-9% increase in revenue.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-users text-indigo-600"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold">Trust Through Familiarity</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Review requests featuring photos of the actual staff members who treated the patient see 3x higher response rates compared to generic requests.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-chart-pie text-indigo-600"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold">Competitive Advantage</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Clinics with 50+ reviews average 4.5 stars see 25% more appointment requests than those with fewer reviews or lower ratings.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-hand-holding-heart text-indigo-600"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold">Staff Recognition</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Personalized review requests boost staff morale by highlighting individual contributions, leading to better patient care and retention.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How It Works Section -->
+    <div id="how-it-works" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-12">
+                <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Process</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    How Review-Me Works
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Our simple 4-step process maximizes your review collection with minimal effort
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <div class="relative">
+                    <div class="absolute left-1/2 -ml-1 h-full border-l-2 border-dashed border-gray-300"></div>
+                    
+                    <div class="flex flex-col md:flex-row items-center justify-between mb-16">
+                        <div class="flex-shrink-0 w-16 h-16 rounded-full bg-indigo-500 flex items-center justify-center text-white text-xl font-bold shadow-lg mb-4 md:mb-0">
+                            1
+                        </div>
+                        <div class="md:w-5/12">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Integration</h3>
+                            <p class="text-gray-600">
+                                Connect Review-Me with your practice management system to automatically sync patient visits and staff assignments.
+                            </p>
+                        </div>
+                        <div class="md:w-5/12 order-first md:order-none mb-4 md:mb-0">
+                            <div class="bg-gray-100 p-4 rounded-lg">
+                                <img src="Images/Integration.PNG" alt="Integration" class="rounded-md">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col md:flex-row items-center justify-between mb-16">
+                        <div class="flex-shrink-0 w-16 h-16 rounded-full bg-indigo-500 flex items-center justify-center text-white text-xl font-bold shadow-lg mb-4 md:mb-0">
+                            2
+                        </div>
+                        <div class="md:w-5/12 order-last">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Personalization</h3>
+                            <p class="text-gray-600">
+                                Our system automatically creates personalized review requests featuring photos of the specific staff members who treated the patient.
+                            </p>
+                        </div>
+                        <div class="md:w-5/12 mb-4 md:mb-0">
+                            <div class="bg-gray-100 p-4 rounded-lg">
+                                <img src="Images/Personalization.PNG" alt="Personalization" class="rounded-md">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col md:flex-row items-center justify-between mb-16">
+                        <div class="flex-shrink-0 w-16 h-16 rounded-full bg-indigo-500 flex items-center justify-center text-white text-xl font-bold shadow-lg mb-4 md:mb-0">
+                            3
+                        </div>
+                        <div class="md:w-5/12">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Delivery</h3>
+                            <p class="text-gray-600">
+                                Review requests are automatically sent via SMS and email at the optimal time after the patient's visit for maximum response rates.
+                            </p>
+                        </div>
+                        <div class="md:w-5/12 order-first md:order-none mb-4 md:mb-0">
+                            <div class="bg-gray-100 p-4 rounded-lg">
+                                <img src="Images/Delivery.PNG" alt="Delivery" class="rounded-md">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col md:flex-row items-center justify-between">
+                        <div class="flex-shrink-0 w-16 h-16 rounded-full bg-indigo-500 flex items-center justify-center text-white text-xl font-bold shadow-lg mb-4 md:mb-0">
+                            4
+                        </div>
+                        <div class="md:w-5/12 order-last">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Results</h3>
+                            <p class="text-gray-600">
+                                Watch your positive reviews multiply, your online reputation soar, and new patient inquiries increase - all with minimal staff effort.
+                            </p>
+                        </div>
+                        <div class="md:w-5/12 mb-4 md:mb-0">
+                            <div class="bg-gray-100 p-4 rounded-lg">
+                                <img src="Images/Results.PNG" alt="Results" class="rounded-md">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="py-16 bg-indigo-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-12">
+                <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Testimonials</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    What Our Clients Say
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="review-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Dr. Sarah Johnson" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Dr. Sarah Johnson</h4>
+                            <p class="text-indigo-600 text-sm">Dental Clinic Owner</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-2">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Review-Me tripled our review response rate within the first month. Patients love seeing photos of our hygienists and assistants in the requests - it makes the experience personal."
+                    </p>
+                </div>
+
+                <div class="review-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael Chen" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Michael Chen</h4>
+                            <p class="text-indigo-600 text-sm">Wellness Center Manager</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-2">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "The integration with our scheduling software was seamless. Now we automatically send review requests without any staff time - and our average rating went from 4.2 to 4.7 in 3 months!"
+                    </p>
+                </div>
+
+                <div class="review-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Dr. Lisa Rodriguez" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Dr. Lisa Rodriguez</h4>
+                            <p class="text-indigo-600 text-sm">Spa & Aesthetics Clinic</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-2">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Our new patient inquiries increased by 40% after implementing Review-Me. The personalized approach with staff photos makes all the difference - patients feel more connected to our team."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <div id="pricing" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-12">
+                <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Pricing</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Simple, Transparent Pricing
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Choose the plan that fits your clinic's needs
+                </p>
+            </div>
+
+            <div class="mt-10 grid grid-cols-1 gap-8 md:grid-cols-3">
+                <div class="pricing-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="px-6 py-8">
+                        <h3 class="text-lg font-medium text-gray-900">Starter</h3>
+                        <p class="mt-4 text-gray-500">
+                            Perfect for small clinics just getting started with review management
+                        </p>
+                        <div class="mt-6 flex items-baseline">
+                            <span class="text-4xl font-extrabold text-gray-900">$99</span>
+                            <span class="ml-1 text-lg font-medium text-gray-500">/month</span>
+                        </div>
+                        <ul class="mt-6 space-y-4">
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">
+                                    Up to 100 review requests/month
+                                </p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">
+                                    SMS & Email delivery
+                                </p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">
+                                    Basic analytics dashboard
+                                </p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-gray-400">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-500">
+                                    Advanced staff recognition
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-6 py-4 bg-gray-50">
+                        <a href="#demo" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pricing-card bg-white rounded-lg shadow-lg overflow-hidden transform scale-105 border-2 border-indigo-500">
+                    <div class="px-6 py-8">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-medium text-gray-900">Professional</h3>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded">Most Popular</span>
+                        </div>
+                        <p class="mt-4 text-gray-500">
+                            Ideal for growing clinics serious about reputation management
+                        </p>
+                        <div class="mt-6 flex items-baseline">
+                            <span class="text-4xl font-extrabold text-gray-900">$199</span>
+                            <span class="ml-1 text-lg font-medium text-gray-500">/month</span>
+                        </div>
+                        <ul class="mt-6 space-y-4">
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">
+                                    Up to 300 review requests/month
+                                </p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">
+                                    SMS & Email delivery
+                                </p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">
+                                    Advanced analytics dashboard
+                                </p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">
+                                    Staff recognition with photos
+                                </p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">
+                                    Custom branding
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-6 py-4 bg-gray-50">
+                        <a href="#demo" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pricing-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="px-6 py-8">
+                        <h3 class="text-lg font-medium text-gray-900">Enterprise</h3>
+                        <p class="mt-4 text-gray-500">
+                            For large clinics and multi-location practices
+                        </p>
+                        <div class="mt-6 flex items-baseline">
+                            <span class="text-4xl font-extrabold text-gray-900">$399</span>
+                            <span class="ml-1 text-lg font-medium text-gray-500">/month</span>
+                        </div>
+                        <ul class="mt-6 space-y-4">
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">
+                                    Unlimited review requests
+                                </p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">
+                                    SMS & Email delivery
+                                </p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">
+                                    Premium analytics dashboard
+                                </p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">
+                                    Staff recognition with photos
+                                </p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">
+                                    Custom branding
+                                </p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">
+                                    Multi-location support
+                                </p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">
+                                    Dedicated account manager
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-6 py-4 bg-gray-50">
+                        <a href="#demo" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Demo Request Section -->
+    <div id="demo" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+                <div class="mb-8 lg:mb-0">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Ready to boost your reviews?
+                    </h2>
+                    <p class="mt-3 text-xl text-gray-500">
+                        Schedule a personalized demo to see how Review-Me can transform your clinic's online reputation.
+                    </p>
+                    <div class="mt-8">
+                        <div class="flex items-center mb-6">
+                            <div class="flex-shrink-0 bg-indigo-500 rounded-full p-2">
+                                <i class="fas fa-check text-white"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-lg font-medium text-gray-900">No obligation</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-6">
+                            <div class="flex-shrink-0 bg-indigo-500 rounded-full p-2">
+                                <i class="fas fa-check text-white"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-lg font-medium text-gray-900">15-minute walkthrough</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-indigo-500 rounded-full p-2">
+                                <i class="fas fa-check text-white"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-lg font-medium text-gray-900">See real results from similar clinics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg shadow-md p-6">
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">Request a Demo</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                            <input type="text" id="name" name="name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+                            <input type="tel" id="phone" name="phone" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div>
+                            <label for="clinic" class="block text-sm font-medium text-gray-700">Clinic Name</label>
+                            <input type="text" id="clinic" name="clinic" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div>
+                            <label for="specialty" class="block text-sm font-medium text-gray-700">Clinic Specialty</label>
+                            <select id="specialty" name="specialty" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                                <option>Dental</option>
+                                <option>Medical</option>
+                                <option>Wellness</option>
+                                <option>Spa & Aesthetics</option>
+                                <option>Physical Therapy</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                Request Demo
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-12">
+                <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">FAQ</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Frequently Asked Questions
+                </p>
+            </div>
+
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-6">
+                    <div class="bg-white shadow overflow-hidden rounded-lg">
+                        <div class="px-4 py-5 sm:p-6">
+                            <button class="w-full flex justify-between items-center text-left">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900">
+                                    How does featuring staff photos increase review rates?
+                                </h3>
+                                <i class="fas fa-chevron-down text-indigo-600"></i>
+                            </button>
+                            <div class="mt-2">
+                                <p class="text-base text-gray-500">
+                                    Studies show that personalized review requests featuring familiar faces (like the hygienist who cleaned the patient's teeth) can increase response rates by up to 300%. Patients are more likely to respond when they recognize the person asking and feel a personal connection.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white shadow overflow-hidden rounded-lg">
+                        <div class="px-4 py-5 sm:p-6">
+                            <button class="w-full flex justify-between items-center text-left">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900">
+                                    Which practice management systems do you integrate with?
+                                </h3>
+                                <i class="fas fa-chevron-down text-indigo-600"></i>
+                            </button>
+                            <div class="mt-2">
+                                <p class="text-base text-gray-500">
+                                    We integrate with all major practice management systems including Dentrix, Eaglesoft, Open Dental, PracticeWorks, and more. Our team can also create custom integrations for less common systems.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white shadow overflow-hidden rounded-lg">
+                        <div class="px-4 py-5 sm:p-6">
+                            <button class="w-full flex justify-between items-center text-left">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900">
+                                    Is Review-Me HIPAA compliant?
+                                </h3>
+                                <i class="fas fa-chevron-down text-indigo-600"></i>
+                            </button>
+                            <div class="mt-2">
+                                <p class="text-base text-gray-500">
+                                    Absolutely. We take patient privacy seriously and are fully HIPAA compliant. All data is encrypted in transit and at rest, and we never share patient information with third parties.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white shadow overflow-hidden rounded-lg">
+                        <div class="px-4 py-5 sm:p-6">
+                            <button class="w-full flex justify-between items-center text-left">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900">
+                                    How soon can we expect to see results?
+                                </h3>
+                                <i class="fas fa-chevron-down text-indigo-600"></i>
+                            </button>
+                            <div class="mt-2">
+                                <p class="text-base text-gray-500">
+                                    Most clinics see a significant increase in reviews within the first 30 days. Our average customer doubles their review volume in the first month and sees a 1-star rating improvement within 3 months.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white shadow overflow-hidden rounded-lg">
+                        <div class="px-4 py-5 sm:p-6">
+                            <button class="w-full flex justify-between items-center text-left">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900">
+                                    Can we customize the review request messages?
+                                </h3>
+                                <i class="fas fa-chevron-down text-indigo-600"></i>
+                            </button>
+                            <div class="mt-2">
+                                <p class="text-base text-gray-500">
+                                    Yes! You can fully customize the messaging to match your clinic's voice and branding. We also provide proven templates that maximize response rates if you prefer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <div class="flex items-center">
+                        <i class="fas fa-comment-medical text-indigo-400 text-3xl mr-2"></i>
+                        <span class="text-xl font-bold text-white">Review-Me</span>
+                    </div>
+                    <p class="mt-4 text-gray-300">
+                        The most effective way for clinics to collect more positive reviews and grow their practice through the power of personalized requests.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Product</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white">Features</a></li>
+                        <li><a href="#pricing" class="text-gray-400 hover:text-white">Pricing</a></li>
+                        <li><a href="#demo" class="text-gray-400 hover:text-white">Demo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Company</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2023 Review-Me. All rights reserved.
+                </p>
+                <div class="mt-4 md:mt-0 flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script for FAQ accordion
+        document.querySelectorAll('.bg-white.shadow.rounded-lg button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                if (content.style.display === 'none' || !content.style.display) {
+                    content.style.display = 'block';
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    content.style.display = 'none';
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
